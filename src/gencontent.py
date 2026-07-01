@@ -23,8 +23,8 @@ def generate_page(from_path, template_path, dest_path, basepath):
 
     tmp = tmp.replace("{{ Title }}", title)
     tmp = tmp.replace("{{ Content }}", html_str)
-    tmp = tmp.replace('href="/', 'href="{basepath}')
-    tmp = tmp.replace('src="/', 'src="{basepath}')
+    tmp = tmp.replace('href="/', f'href="{basepath}')
+    tmp = tmp.replace('src="/', f'src="{basepath}')
 
     dest_dir_path = os.path.dirname(dest_path)
     if dest_dir_path != "":
