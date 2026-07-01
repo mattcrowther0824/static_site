@@ -21,6 +21,8 @@ def generate_page(from_path, template_path, dest_path, basepath):
 
     title = extract_title(md)
 
+    # print(basepath)
+
     tmp = tmp.replace("{{ Title }}", title)
     tmp = tmp.replace("{{ Content }}", html_str)
     tmp = tmp.replace('href="/', f'href="{basepath}')

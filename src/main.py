@@ -8,6 +8,7 @@ from textnode import TextNode, TextType
 def main():
     if len(sys.argv) > 1:
       basepath = sys.argv[1]
+      # print(basepath)
     else:
       basepath = "/"
     clear_dest_dir("./docs")
