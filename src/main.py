@@ -11,7 +11,7 @@ def main():
     else:
       basepath = "/"
     clear_dest_dir("./public")
-    copy_files_recursive("./static", "./public")
+    copy_files_recursive("./static", "./docs")
 
     generate_pages_recursive("content", "template.html", "./docs", basepath)
 
